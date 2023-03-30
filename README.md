@@ -6,6 +6,7 @@ The Book Store App is a web application built using Angular that allows users to
 ## Features
 
 -Browse through the list of books returned by the search\
+-Use pagination to see more books\
 -View the details of a book, including its cover image, title, author, and description\
 -Enjoy a small fun quotes generator on the home page\
 -Responsive design for optimal viewing on desktop and mobile devices

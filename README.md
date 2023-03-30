@@ -1,27 +1,27 @@
-# BookStore
+# Book Store App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.\
+The Book Store App is a web application built using Angular that allows users to search and browse books from the Google Books API. In addition to searching for books, users can view the details of each book and enjoy a small fun quotes generator on the home page.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+-Browse through the list of books returned by the search\
+-View the details of a book, including its cover image, title, author, and description\
+-Enjoy a small fun quotes generator on the home page\
+-Responsive design for optimal viewing on desktop and mobile devices
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run this application locally, you will need to have Node.js installed on your machine. Once you have Node.js installed, follow these steps:\
+
+1-Clone this repository to your local machine\
+2-Navigate to the root directory of the project in your terminal\
+3-Run 'npm install' to install the project's dependencies\
+4-Run 'ng serve' to start the application\
+5-Open your web browser and navigate to 'http://localhost:4200/' to view the application
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

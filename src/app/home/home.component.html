@@ -1,0 +1,17 @@
+<div class="advices-container">
+  <div class="advices-box">
+    <h1 class="advices-heading">Quotes Generator</h1>
+    <p class="advices-advice" *ngIf="!loading && !errorMsg">{{ ourQuote }}</p>
+    <p class="advices-advice" *ngIf="loading">Loading...</p>
+    <p class="advices-advice error-msg" *ngIf="errorMsg && !loading">
+      {{ errorMsg }}
+    </p>
+    <button
+      class="advices-button"
+      [disabled]="loading"
+      (click)="onChangeQuote()"
+    >
+      {{ loading ? "Loading" : "Tell Me A Quote" }}
+    </button>
+  </div>
+</div>

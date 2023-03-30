@@ -1,0 +1,71 @@
+<div class="text-center" *ngIf="loading">
+  <div class="spinner-border" style="width: 5rem; height: 5rem" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<div class="alert alert-danger" role="alert" *ngIf="!loading && errorMsg">
+  {{ errorMsg }}
+</div>
+
+<div class="row text-center" *ngIf="!loading && !errorMsg">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a
+          class="page-link {{ currentPage === 1 ? 'disabled' : '' }}"
+          (click)="onDecrease()"
+          >Previous</a
+        >
+      </li>
+      <li class="page-item">
+        <a
+          class="page-link {{ currentPage === 1 ? 'active' : '' }}"
+          (click)="currentPage = 1"
+          >1</a
+        >
+      </li>
+      <li class="page-item">
+        <a
+          class="page-link {{ currentPage === 2 ? 'active' : '' }}"
+          (click)="currentPage = 2"
+          >2</a
+        >
+      </li>
+      <li class="page-item">
+        <a
+          class="page-link {{ currentPage === 2 ? 'disabled' : '' }}"
+          (click)="onIncrease()"
+          >Next</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="row gutter-x" *ngIf="!loading && !errorMsg">
+  <div
+    class="col-lg-4 col-md-6 mb-2"
+    *ngFor="
+      let book of myBooks
+        | paginate : { itemsPerPage: pageSize, currentPage: currentPage }
+    "
+  >
+    <div class="card" style="width: 18rem; margin-inline: auto">
+      <img
+        src="{{ book.imagePath }}"
+        class="card-img-top book-image"
+        alt="{{ book.title }}"
+      />
+      <div class="card-body text-center">
+        <h5 class="card-title">{{ book.title }}</h5>
+        <p class="card-text" appShorten>
+          {{ book.description }}
+        </p>
+        <a class="btn btn-outline-dark btn-lg" [routerLink]="['book', book.id]"
+          >Details</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

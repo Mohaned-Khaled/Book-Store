@@ -1,0 +1,66 @@
+.advices-container {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.advices-box {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  width: 85%;
+  text-align: center;
+  color: darkgreen;
+  margin-top: 105px;
+  margin-bottom: 20px;
+}
+
+.advices-heading {
+  font-size: 35px;
+  font-weight: 100;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.advices-advice {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 40px;
+}
+
+.error-msg {
+  color: red;
+}
+
+.advices-button {
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  color: darkgreen;
+  transition: all 0.4s ease;
+}
+
+.advices-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.advices-button[disabled] {
+  cursor: no-drop;
+  opacity: 0.3;
+}

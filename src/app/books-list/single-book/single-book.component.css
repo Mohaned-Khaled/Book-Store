@@ -1,0 +1,20 @@
+.book-content {
+  display: flex;
+  align-items: center;
+}
+
+.book-title {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.book-author {
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.book-category {
+  color: #777;
+  line-height: 1.7;
+}
